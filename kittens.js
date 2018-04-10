@@ -145,9 +145,9 @@ class kittenBot
                     gamePage.craft(resources[i][1],10);
                 }
             }
-            if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrate').unlocked)
-                while(gamePage.resPool.get('slab').value > 90000)
-                     gamePage.craft(gamePage.resPool.get('concrate').name,1);
+       //     if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrate').unlocked)
+       //         while(gamePage.resPool.get('slab').value > 90000)
+        //             gamePage.craft(gamePage.resPool.get('concrate').name,1);
             var titan = gamePage.resPool.get('titanium');
             var steel = gamePage.resPool.get('steel');
             var coal = gamePage.resPool.get('coal');
