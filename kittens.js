@@ -136,13 +136,12 @@ class kittenBot
             for (var i = 0; i < resources.length; i++) 
             {
                 var curRes = gamePage.resPool.get(resources[i][0]);
-                if (curRes.value / curRes.maxValue > 0.95 && gamePage.workshop.getCraft(resources[i][1]).unlocked) 
+		var check = gamePage.workshop.getCraft(resources[i][1]);
+                if (curRes.value / curRes.maxValue > 0.95 && check.unlocked) 
                 {
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
-                    gamePage.craft(resources[i][1],10);
+		    
+                    gamePage.craft(resources[i][1],curRes.maxValue*0.05/check.prices[0].val);
+
                 }
             }
        //     if(gamePage.resPool.get('slab').value > 120000 && gamePage.resPool.get('concrate').unlocked)
