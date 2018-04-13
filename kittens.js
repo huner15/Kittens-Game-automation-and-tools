@@ -151,8 +151,9 @@ class kittenBot
             var titan = gamePage.resPool.get('titanium');
             var steel = gamePage.resPool.get('steel');
             var coal = gamePage.resPool.get('coal');
-            if(titan.value/titan.maxValue>0.95 && steel.value/coal.maxValue>0.1 && gamePage.resPool.get('alloy').unlocked)
-              gamePage.craft(gamePage.resPool.get('alloy').name,10);
+	    var alloy = gamePage.resPool.get('alloy')
+            if(titan.value/titan.maxValue>0.95 && steel.value/coal.maxValue>0.1 && alloy.unlocked && steel.value > alloy.value*10)
+              gamePage.craft(alloy.name,10);
         }, 2 * 1000);
     }
         
