@@ -131,6 +131,10 @@ class kittenBot
                 ["minerals", "slab"],
                 ["coal", "steel"],
                 ["iron", "plate"],
+		["oil", "kerosene"],
+		["uranium", "thorium"],
+		["catnip", "wood"],
+		["unobtainium", "eludium"],
                 
             ];
 
