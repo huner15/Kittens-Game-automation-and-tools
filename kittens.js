@@ -145,7 +145,7 @@ class kittenBot
                 if (curRes.value / curRes.maxValue > 0.95 && check.unlocked) 
                 {
 		    
-                    gamePage.craft(resources[i][1],curRes.maxValue*0.05/check.prices[0].val);
+                    gamePage.craft(resources[i][1],curRes.maxValue*0.15/check.prices[0].val);
 
                 }
             }
